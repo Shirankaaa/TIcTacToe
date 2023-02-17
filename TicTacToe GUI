@@ -1,0 +1,625 @@
+import java.awt.Color;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author shira
+ */
+public class Tic_Tac_Toe extends javax.swing.JFrame {
+    
+    private String startgame = "X";
+    private int xCount = 0;
+    private int oCount = 0;
+    
+
+    /**
+     * Creates new form Tic_Tac_Toe
+     */
+    public Tic_Tac_Toe() {
+        initComponents();
+    }
+    private void gameScore() 
+    {
+        playerxxx.setText(String.valueOf(xCount));
+        playerooo.setText(String.valueOf(oCount));
+    }
+    
+    private void choose_a_player()
+    {
+        if(startgame.equalsIgnoreCase("X"))
+        {
+            startgame = "O";
+        }
+        else
+        {
+            startgame = "X";
+        }
+    }
+    
+    private void winnningame()
+    {
+        String b1 = txtbtn1.getText();
+         String b2 = txtbtn2.getText();
+          String b3= txtbtn3.getText();
+        
+         String b4 = txtbtn4.getText();
+          String b5 = txtbtn5.getText();
+           String b6 = txtbtn6.getText();
+           
+            String b7 = txtbtn7.getText();
+             String b8 = txtbtn8.getText();
+              String b9 = txtbtn9.getText();
+         
+              //PLAYER X CODING
+              
+              if(b1 == ("X") && b2 == ("X") && b3 ==("X"))
+              {
+                  JOptionPane.showMessageDialog(this, "player X win", "Tic_Tac_Toe", JOptionPane.INFORMATION_MESSAGE);
+                  xCount++;
+                  gameScore();
+                  
+                  txtbtn1.setBackground(Color.red);
+                  txtbtn2.setBackground(Color.red);
+                  txtbtn3.setBackground(Color.red);
+                  
+              }
+              
+              if(b4 == ("X") && b5 == ("X") && b6 ==("X"))
+              {
+                  JOptionPane.showMessageDialog(this, "player X win", "Tic_Tac_Toe", JOptionPane.INFORMATION_MESSAGE);
+                  xCount++;
+                  gameScore();
+                  
+                  txtbtn4.setBackground(Color.red);
+                  txtbtn5.setBackground(Color.red);
+                  txtbtn6.setBackground(Color.red);
+                  
+              }
+              
+              if(b7 == ("X") && b8 == ("X") && b9 ==("X"))
+              {
+                  JOptionPane.showMessageDialog(this, "player X win", "Tic_Tac_Toe", JOptionPane.INFORMATION_MESSAGE);
+                  xCount++;
+                  gameScore();
+                  
+                  txtbtn7.setBackground(Color.red);
+                  txtbtn8.setBackground(Color.red);
+                  txtbtn9.setBackground(Color.red);
+                  
+              }
+              
+              if(b1 == ("X") && b4 == ("X") && b7 ==("X"))
+              {
+                  JOptionPane.showMessageDialog(this, "player X win", "Tic_Tac_Toe", JOptionPane.INFORMATION_MESSAGE);
+                  xCount++;
+                  gameScore();
+                  
+                  txtbtn1.setBackground(Color.red);
+                  txtbtn4.setBackground(Color.red);
+                  txtbtn7.setBackground(Color.red);
+                  
+              }
+              
+              if(b2 == ("X") && b5 == ("X") && b8 ==("X"))
+              {
+                  JOptionPane.showMessageDialog(this, "player X win", "Tic_Tac_Toe", JOptionPane.INFORMATION_MESSAGE);
+                  xCount++;
+                  gameScore();
+                  
+                  txtbtn2.setBackground(Color.red);
+                  txtbtn5.setBackground(Color.red);
+                  txtbtn8.setBackground(Color.red);
+                  
+              }
+                            
+             if(b3 == ("X") && b6 == ("X") && b9 ==("X"))
+              {
+                  JOptionPane.showMessageDialog(this, "player X win", "Tic_Tac_Toe", JOptionPane.INFORMATION_MESSAGE);
+                  xCount++;
+                  gameScore();
+                  
+                  txtbtn3.setBackground(Color.red);
+                  txtbtn6.setBackground(Color.red);
+                  txtbtn9.setBackground(Color.red);
+                  
+              } 
+             if(b1 == ("X") && b5 == ("X") && b9 ==("X"))
+              {
+                  JOptionPane.showMessageDialog(this, "player X win", "Tic_Tac_Toe", JOptionPane.INFORMATION_MESSAGE);
+                  xCount++;
+                  gameScore();
+                  
+                  txtbtn1.setBackground(Color.red);
+                  txtbtn5.setBackground(Color.red);
+                  txtbtn9.setBackground(Color.red);
+                  
+              } 
+              if(b3 == ("X") && b6 == ("X") && b9 ==("X"))
+              {
+                  JOptionPane.showMessageDialog(this, "player X win", "Tic_Tac_Toe", JOptionPane.INFORMATION_MESSAGE);
+                  xCount++;
+                  gameScore();
+                  
+                  txtbtn3.setBackground(Color.red);
+                  txtbtn6.setBackground(Color.red);
+                  txtbtn9.setBackground(Color.red);
+                  
+              }    
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        txtbtn1 = new javax.swing.JButton();
+        txtbtn2 = new javax.swing.JButton();
+        txtbtn3 = new javax.swing.JButton();
+        txtbtn4 = new javax.swing.JButton();
+        txtbtn5 = new javax.swing.JButton();
+        txtbtn6 = new javax.swing.JButton();
+        txtbtn7 = new javax.swing.JButton();
+        txtbtn8 = new javax.swing.JButton();
+        txtbtn9 = new javax.swing.JButton();
+        txtexit = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        playerx = new javax.swing.JLabel();
+        playero = new javax.swing.JLabel();
+        playerxxx = new javax.swing.JLabel();
+        playerooo = new javax.swing.JLabel();
+        txtreset = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("TIC TAC TOE");
+        setResizable(false);
+
+        jPanel1.setBackground(new java.awt.Color(204, 0, 51));
+        jPanel1.setToolTipText("");
+
+        jLabel1.setFont(new java.awt.Font("Calibri", 1, 38)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jLabel1.setText("TIC TAC TOE GAME");
+        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(356, 356, 356)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        txtbtn1.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        txtbtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbtn1ActionPerformed(evt);
+            }
+        });
+
+        txtbtn2.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        txtbtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbtn2ActionPerformed(evt);
+            }
+        });
+
+        txtbtn3.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        txtbtn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbtn3ActionPerformed(evt);
+            }
+        });
+
+        txtbtn4.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        txtbtn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbtn4ActionPerformed(evt);
+            }
+        });
+
+        txtbtn5.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        txtbtn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbtn5ActionPerformed(evt);
+            }
+        });
+
+        txtbtn6.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        txtbtn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbtn6ActionPerformed(evt);
+            }
+        });
+
+        txtbtn7.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        txtbtn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbtn7ActionPerformed(evt);
+            }
+        });
+
+        txtbtn8.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        txtbtn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbtn8ActionPerformed(evt);
+            }
+        });
+
+        txtbtn9.setFont(new java.awt.Font("Tahoma", 1, 50)); // NOI18N
+        txtbtn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtbtn9ActionPerformed(evt);
+            }
+        });
+
+        txtexit.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txtexit.setForeground(new java.awt.Color(255, 0, 0));
+        txtexit.setText("EXIT");
+        txtexit.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        txtexit.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        txtexit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtexitActionPerformed(evt);
+            }
+        });
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(255, 51, 51), java.awt.Color.red));
+        jPanel2.setForeground(new java.awt.Color(255, 51, 51));
+
+        playerx.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        playerx.setText("Player X :");
+
+        playero.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        playero.setText("Player O :");
+
+        playerxxx.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        playerxxx.setForeground(new java.awt.Color(0, 0, 255));
+        playerxxx.setText("xxxxxxxxxxxxxxx");
+
+        playerooo.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        playerooo.setForeground(new java.awt.Color(0, 0, 255));
+        playerooo.setText("xxxxxxxxxxxxxxx");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(playero)
+                    .addComponent(playerx))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(playerooo)
+                    .addComponent(playerxxx, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(54, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(74, 74, 74)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(playerx)
+                    .addComponent(playerxxx))
+                .addGap(57, 57, 57)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(playero)
+                    .addComponent(playerooo))
+                .addContainerGap(74, Short.MAX_VALUE))
+        );
+
+        txtreset.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txtreset.setForeground(new java.awt.Color(51, 0, 255));
+        txtreset.setText("RESET");
+        txtreset.setToolTipText("");
+        txtreset.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        txtreset.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        txtreset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtresetActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtbtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtbtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(txtbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtbtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtbtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtbtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(txtbtn6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                        .addComponent(txtbtn9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txtbtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addComponent(txtreset, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtexit, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(42, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(65, 65, 65))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtbtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtbtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtbtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(txtbtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtbtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtbtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtbtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtbtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtreset, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtexit, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(0, 24, Short.MAX_VALUE))
+        );
+
+        pack();
+        setLocationRelativeTo(null);
+    }// </editor-fold>                        
+
+    private void txtbtn1ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+           txtbtn1.setText(startgame);
+              if(startgame.equalsIgnoreCase("X"))
+        {
+            txtbtn1.setForeground(color.RED);
+        }
+        else
+        {
+            txtbtn1.setForeground(color.BLUE);
+        }
+              choose_a_player();
+              winnningame();
+        
+    }                                       
+
+    private void txtbtn2ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+          txtbtn2.setText(startgame);
+              if(startgame.equalsIgnoreCase("X"))
+        {
+            txtbtn2.setForeground(color.RED);
+        }
+        else
+        {
+            txtbtn2.setForeground(color.BLUE);
+        }
+              choose_a_player();
+              winnningame();
+    }                                       
+
+    private void txtbtn3ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+         txtbtn3.setText(startgame);
+              if(startgame.equalsIgnoreCase("X"))
+        {
+            txtbtn3.setForeground(color.RED);
+        }
+        else
+        {
+            txtbtn3.setForeground(color.BLUE);
+        }
+              choose_a_player();
+              winnningame();
+    }                                       
+
+    private void txtbtn4ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+         txtbtn4.setText(startgame);
+              if(startgame.equalsIgnoreCase("X"))
+        {
+            txtbtn4.setForeground(color.RED);
+        }
+        else
+        {
+            txtbtn4.setForeground(color.BLUE);
+        }
+              choose_a_player();
+              winnningame();
+    }                                       
+
+    private void txtbtn5ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+         txtbtn5.setText(startgame);
+              if(startgame.equalsIgnoreCase("X"))
+        {
+            txtbtn5.setForeground(color.RED);
+        }
+        else
+        {
+            txtbtn5.setForeground(color.BLUE);
+        }
+              choose_a_player();
+              winnningame();
+    }                                       
+
+    private void txtbtn6ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+         txtbtn6.setText(startgame);
+              if(startgame.equalsIgnoreCase("X"))
+        {
+            txtbtn6.setForeground(color.RED);
+        }
+        else
+        {
+            txtbtn6.setForeground(color.BLUE);
+        }
+              choose_a_player();
+              winnningame();
+    }                                       
+
+    private void txtbtn7ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+         txtbtn7.setText(startgame);
+              if(startgame.equalsIgnoreCase("X"))
+        {
+            txtbtn7.setForeground(color.RED);
+        }
+        else
+        {
+            txtbtn7.setForeground(color.BLUE);
+        }
+              choose_a_player();
+              winnningame();
+    }                                       
+
+    private void txtbtn8ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+         txtbtn8.setText(startgame);
+              if(startgame.equalsIgnoreCase("X"))
+        {
+            txtbtn8.setForeground(color.RED);
+        }
+        else
+        {
+            txtbtn8.setForeground(color.BLUE);
+        }
+              choose_a_player();
+              winnningame();
+    }                                       
+
+    private void txtbtn9ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+         txtbtn9.setText(startgame);
+              if(startgame.equalsIgnoreCase("X"))
+        {
+            txtbtn9.setForeground(color.RED);
+        }
+        else
+        {
+            txtbtn9.setForeground(color.BLUE);
+        }
+              choose_a_player();
+              winnningame();
+    }                                       
+
+    private void txtresetActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+    }                                        
+
+    private void txtexitActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+        JFrame frame = new JFrame("Exit");
+        
+       if (JOptionPane.showConfirmDialog(frame, "Confirm if you want to exit",
+            "Tic_Tac_Toe", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) 
+       {
+        
+            System.exit(0);
+        }
+    }                                       
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Tic_Tac_Toe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Tic_Tac_Toe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Tic_Tac_Toe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Tic_Tac_Toe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Tic_Tac_Toe().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel playero;
+    private javax.swing.JLabel playerooo;
+    private javax.swing.JLabel playerx;
+    private javax.swing.JLabel playerxxx;
+    private javax.swing.JButton txtbtn1;
+    private javax.swing.JButton txtbtn2;
+    private javax.swing.JButton txtbtn3;
+    private javax.swing.JButton txtbtn4;
+    private javax.swing.JButton txtbtn5;
+    private javax.swing.JButton txtbtn6;
+    private javax.swing.JButton txtbtn7;
+    private javax.swing.JButton txtbtn8;
+    private javax.swing.JButton txtbtn9;
+    private javax.swing.JButton txtexit;
+    private javax.swing.JButton txtreset;
+    // End of variables declaration                   
+}
